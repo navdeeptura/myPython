@@ -1,0 +1,1 @@
+LOGIN_BUTTON_XPATH = "xpath://a[@class='ico-login']"

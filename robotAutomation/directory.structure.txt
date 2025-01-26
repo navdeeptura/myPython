@@ -1,0 +1,95 @@
+A well-organized **directory structure** in Robot Framework helps improve test maintainability, readability, and reusability. Below is a commonly used directory structure for Robot Framework projects, which can be adapted based on the project's complexity and team requirements.
+
+---
+
+### **Suggested Directory Structure**
+```
+project-root/
+│
+├── tests/               # Main directory for test cases
+│   ├── smoke/           # Smoke tests
+│   ├── regression/      # Regression tests
+│   ├── performance/     # Performance tests
+│   └── integration/     # Integration tests
+│
+├── resources/           # Resource files with shared keywords, variables, etc.
+│   ├── keywords.robot   # Custom keywords
+│   ├── variables.robot  # Shared variables
+│   ├── common.robot     # Reusable utilities or setup/teardown
+│   └── locators.robot   # UI locators (if testing web applications)
+│
+├── libraries/           # Custom Python libraries for advanced functions
+│   ├── mylibrary.py
+│   └── utils.py
+│
+├── results/             # Directory to store test execution reports and logs
+│   ├── log.html
+│   ├── report.html
+│   ├── output.xml
+│   └── screenshots/     # Screenshots for failed tests (if applicable)
+│
+├── configs/             # Configuration files for test environments
+│   ├── dev_config.json
+│   ├── test_config.json
+│   └── prod_config.json
+│
+├── drivers/             # WebDriver executables (if applicable)
+│   ├── chromedriver.exe
+│   ├── geckodriver.exe
+│   └── edgedriver.exe
+│
+├── logs/                # Additional logs (if needed)
+│
+├── .env                 # Environment variables (optional, for sensitive data)
+├── requirements.txt     # Python dependencies for the project
+├── pyproject.toml       # Optional: Python project configuration (for modern tooling)
+├── README.md            # Project documentation
+└── robot.yaml           # Optional: Configuration file for Robot Framework tasks
+```
+
+---
+
+### **Description of Key Directories and Files**
+
+1. **`tests/`**
+   - Contains the main test cases organized by type or functionality.
+   - Subdirectories like `smoke/` and `regression/` group tests logically.
+   - Test files follow a naming convention like `test_feature_name.robot`.
+
+2. **`resources/`**
+   - Contains reusable components like shared variables, locators, and custom keywords.
+   - Promotes modularity by separating test logic from test case files.
+
+3. **`libraries/`**
+   - Contains custom Python libraries that provide additional functionality not covered by Robot Framework's built-in libraries.
+
+4. **`results/`**
+   - Stores test execution results, including `log.html`, `report.html`, and `output.xml`.
+   - Screenshots of failures can be saved here in a `screenshots/` folder.
+
+5. **`configs/`**
+   - Holds configuration files for different environments (e.g., development, testing, production).
+   - JSON, YAML, or `.env` formats are commonly used.
+
+6. **`drivers/`**
+   - Stores browser drivers required for web testing with SeleniumLibrary or BrowserLibrary.
+   - Examples: `chromedriver`, `geckodriver`.
+
+7. **`logs/`**
+   - Stores application or framework logs, separate from test execution reports.
+
+8. **`requirements.txt`**
+   - Lists Python dependencies for the project (e.g., Robot Framework libraries).
+
+9. **`README.md`**
+   - Provides an overview of the project, setup instructions, and usage guidelines.
+
+---
+
+### **Best Practices**
+- **Consistent Naming:** Use descriptive and consistent names for tests, resources, and libraries.
+- **Environment-Specific Configurations:** Separate environment configurations to enable seamless switching between dev/test/prod.
+- **Reusability:** Place shared keywords and variables in `resources/` to avoid duplication.
+- **Version Control:** Exclude `results/` and `drivers/` from version control using `.gitignore`.
+
+This structure makes it easier to scale and collaborate on Robot Framework projects effectively.
