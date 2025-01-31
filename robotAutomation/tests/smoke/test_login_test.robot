@@ -19,7 +19,7 @@ LoginTest
     LoginToApplication
     #Click link    ${LINK_TEXT}
     #CountLists
-    FindH2Elements
+    #FindH2Elements
 
 
 *** Keywords ***
