@@ -20,6 +20,7 @@ LoginTest
     #Click link    ${LINK_TEXT}
     #CountLists
     FindH2Elements
+    Log to console    This is correct
 
 
 *** Keywords ***
