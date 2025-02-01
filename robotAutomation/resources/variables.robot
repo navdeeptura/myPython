@@ -1,5 +1,6 @@
 *** Variables ***
-${browser}    chrome
+#${browser}    chrome
+${browser}    ${BROWSERNAME}
 ${ecommerceURL}    https://tutorialsninja.com/demo/index.php?route=common/home
 ${ecommerceUserName}    sample
 ${ecommercePassword}    sample

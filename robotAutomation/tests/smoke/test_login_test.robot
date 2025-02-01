@@ -15,7 +15,7 @@ ${element}   class:list-group-item
 
 *** Test Cases ***
 LoginTest
-    Open browser    ${ecommerceURL}}    ${browser}
+    Open browser    ${ecommerceURL}    ${browser}
     LoginToApplication
     #Click link    ${LINK_TEXT}
     #CountLists
