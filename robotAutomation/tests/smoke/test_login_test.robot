@@ -18,7 +18,7 @@ LoginTest
     Open browser    ${ecommerceURL}}    ${browser}
     LoginToApplication
     #Click link    ${LINK_TEXT}
-    #CountLists
+    CountLists
     FindH2Elements
 
 
