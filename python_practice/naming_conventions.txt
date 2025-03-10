@@ -1,0 +1,9 @@
+Am I correctly following the instruction in URL: https://peps.python.org/pep-0008/
+Naming conventions:
+    module_name.py
+    mypackage or package_name
+    ClassName
+    variable_name
+    global_variable_name
+    function_name()
+    CONSTANTS_NAME
