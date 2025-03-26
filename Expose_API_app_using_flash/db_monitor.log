@@ -1,0 +1,14 @@
+2025-03-18 10:16:22,388 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.68.56:5000
+2025-03-18 10:16:22,389 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 10:16:22,399 - INFO -  * Restarting with stat
+2025-03-18 10:16:24,162 - WARNING -  * Debugger is active!
+2025-03-18 10:16:24,188 - INFO -  * Debugger PIN: 520-094-979
+2025-03-18 10:18:35,528 - INFO - Received Data from Android: this is a simple string
+2025-03-18 10:18:35,529 - INFO - Received Data: this is a simple string
+2025-03-18 10:18:35,529 - INFO - 192.168.68.56 - - [18/Mar/2025 10:18:35] "POST /submit HTTP/1.1" 200 -
+2025-03-18 10:19:14,266 - INFO - Received Data from Android: 888-666-555
+2025-03-18 10:19:14,267 - INFO - Received Data: [REDACTED CANADA_SIN]
+2025-03-18 10:19:14,269 - INFO - 192.168.68.56 - - [18/Mar/2025 10:19:14] "POST /submit HTTP/1.1" 200 -

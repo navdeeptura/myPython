@@ -1,4 +1,24 @@
 Am I correctly following the instruction in URL: https://peps.python.org/pep-0008/
+
+Element	            Python Naming Convention	Java Naming Convention
+Variables	        snake_case              	camelCase (lowercase, then capitalized words)
+Constants	        UPPER_CASE_SNAKE_CASE	    UPPER_CASE_SNAKE_CASE
+Functions/Methods	snake_case()            	camelCase()
+Classes	            PascalCase	                PascalCase
+Modules	            snake_case.py	            camelCase.java (if class-based)
+Packages        	snake_case	                lowercase (dot-separated, e.g., com.example.project)
+Private Variables
+/Methods	        _single_leading_underscore  private camelCase
+                    (convention) or             (use access modifiers
+                    __double_underscore         like private)
+                    (name mangling)
+Interfaces	        N/A                         PascalCase (e.g., DataReader)
+Exception Classes	PascalCase + Error          PascalCase + Exception
+                    (e.g., ValueError)	        (e.g., FileNotFoundException)
+Booleans	        is_valid = True	            boolean isValid = true;
+File Names	        snake_case.py	            PascalCase.java (matching class name)
+
+
 Naming conventions:
     module_name.py
     mypackage or package_name

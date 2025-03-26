@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Job Extractor</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
+        .container { margin-top: 10px; }
+        button { background: #0073b1; color: white; border: none; padding: 10px; cursor: pointer; width: 100%; margin-top: 5px; }
+        button:hover { background: #005582; }
+        #copy { background: #28a745; } /* Green color for copy button */
+        #copy:hover { background: #218838; }
+    </style>
+</head>
+<body>
+    <h3>LinkedIn Job Extractor</h3>
+    <div class="container">
+        <p><strong>Job Title:</strong> <span id="jobTitle">Loading...</span></p>
+        <p><strong>Company:</strong> <span id="company">Loading...</span></p>
+        <p><strong>Location:</strong> <span id="location">Loading...</span></p>
+        <p><strong>Job URL:</strong> <a id="jobURL" target="_blank">Click here</a></p>
+        <button id="extract">Extract Again</button>
+        <button id="copy">Copy to Clipboard</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

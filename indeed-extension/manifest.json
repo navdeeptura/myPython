@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Indeed Job Extractor",
+  "version": "1.0",
+  "description": "Extract job details from an Indeed job post",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://ca.indeed.com/viewjob?jk=*"],
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
+      }
+  },
+  "content_scripts": [
+      {
+          "matches": ["https://ca.indeed.com/viewjob?jk=*"],
+          "js": ["content.js"]
+      }
+  ]
+}
